@@ -1,0 +1,62 @@
+[
+  {
+    "id": "rule_util_high",
+    "type": "rule",
+    "text": "High credit utilization (e.g., >70%) is associated with higher default risk because it indicates limited remaining credit capacity."
+  },
+  {
+    "id": "rule_history_short",
+    "type": "rule",
+    "text": "Short credit history increases uncertainty in repayment behavior and can increase estimated risk when other factors are unfavorable."
+  },
+  {
+    "id": "rule_dti_high",
+    "type": "rule",
+    "text": "High debt-to-income ratio reduces repayment capacity and is a common driver of credit risk."
+  },
+  {
+    "id": "rule_late_pay",
+    "type": "rule",
+    "text": "Recent delinquency or late payments are strong indicators of elevated default risk."
+  },
+  {
+    "id": "case_001",
+    "type": "case",
+    "text": "Case: Applicant rejected. Utilization 82%, credit history 1.1 years, DTI 41%. Main reasons: high utilization and short history."
+  },
+  {
+    "id": "case_002",
+    "type": "case",
+    "text": "Case: Applicant rejected. Utilization 76%, recent late payment, DTI 38%. Main reasons: delinquency signal and high utilization."
+  },
+  {
+    "id": "case_003",
+    "type": "case",
+    "text": "Case: Applicant approved with conditions. Utilization 35%, credit history 6.0 years, stable income. Main reasons: low utilization and long history."
+  },
+  {
+    "id": "case_004",
+    "type": "case",
+    "text": "Case: Applicant rejected. Very short history 0.8 years and high DTI 45% despite moderate utilization 55%. Main reasons: short history and high DTI."
+  },
+  {
+    "id": "case_005",
+    "type": "case",
+    "text": "Case: Applicant approved. Utilization 28%, no delinquency, DTI 22%. Main reasons: strong repayment capacity and low utilization."
+  },
+  {
+    "id": "case_006",
+    "type": "case",
+    "text": "Case: Applicant rejected. Multiple recent late payments and utilization 69%. Main reasons: delinquency and elevated utilization."
+  },
+  {
+    "id": "case_007",
+    "type": "case",
+    "text": "Case: Applicant approved. Utilization 40%, credit history 8.2 years, DTI 27%. Main reasons: long history and manageable debt burden."
+  },
+  {
+    "id": "case_008",
+    "type": "case",
+    "text": "Case: Applicant rejected. Utilization 88%, credit history 2.0 years, DTI 36%. Main reasons: extremely high utilization."
+  }
+]
