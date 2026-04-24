@@ -25,12 +25,21 @@ def search(query: str, k: int = 5):
 
     results = []
     for score, idx in zip(scores[0], ids[0]):
-        results.append({"score": float(score), **docs[int(idx)]})
+        if idx == -1:
+            continue
+        doc = docs[int(idx)]
+        results.append({
+            "score": float(score),
+            "case_id": doc.get("case_id"),
+            "text": doc.get("text"),
+            "raw": doc.get("raw", {})
+        })
     return results
 
 
 if __name__ == "__main__":
-    query = "Rejected applicant with utilization 82% and short credit history"
+    query = "Rejected applicant with high default probability and negative expected profit"
     res = search(query, k=5)
+
     for r in res:
-        print(f"[{r['score']:.3f}] {r['id']} ({r['type']}): {r['text']}")
+        print(f"[{r['score']:.3f}] {r['case_id']}: {r['text']}")
