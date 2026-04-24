@@ -22,7 +22,7 @@ rejecting a non-default leads to missed interest income.
 - Profit-based decision rule using expected profit combining predicted default probability, loan amount, and interest rate
 
 ## Results
-- ROC-AUC: 0.89 (5-fold cross-validation)
+- ROC-AUC: 0.87 (5-fold cross-validation)
 - Profit-based decision rule improves total realized profit by ~4% on test data
 - Evaluation includes both statistical metrics and decision-based metrics
 
